@@ -1,0 +1,44 @@
+
+
+//imports 
+@import './scss/SignIn';
+@import './scss/SignUp';
+@import './scss/Form';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300;400&display=swap');
+$abel: 'Abel', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $quicksand;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.active{
+   display: block; 
+}
+
+.disactive{
+    display: none;
+}
