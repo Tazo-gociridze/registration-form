@@ -10,6 +10,7 @@ $pourple: rgb(109, 17, 109);
     padding: 40px 60px;
     transition: all 0.3s;
     font-weight: 100;
+    margin: 20px;
 
     animation-name: formAnim;
     animation-duration: 0.5s;
@@ -64,6 +65,7 @@ $pourple: rgb(109, 17, 109);
         display: flex;
         justify-content: space-between;
         margin-top: 25px;
+        margin-bottom: 25px;
 
         a{
             color: rgb(0, 0, 0);
@@ -73,7 +75,6 @@ $pourple: rgb(109, 17, 109);
     .save-password {
         display: flex;
         gap: 5px;
-        margin-bottom: 25px;
 
         p{
             color: black;
@@ -170,6 +171,31 @@ $pourple: rgb(109, 17, 109);
 @media(max-width:310px) {
     .login__form-container{
         padding: 20px 10px;
+    }
+}
+
+@media(max-width:450px) {
+    .additionals{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 25px;
+
+        a{
+            align-self: flex-end;
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .login__form-container{
+        padding: 30px;
+    }
+}
+
+@media(max-width:310px) {
+    .login__form-container{
+        padding: 30px 20px;
     }
 }
 
