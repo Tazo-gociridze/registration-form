@@ -1,5 +1,5 @@
 $color-gray: rgba(128, 128, 128, 0.63);
-$pourple: rgb(109, 17, 109);
+$purple: rgb(109, 17, 109);
 
 .login__form-container {
     width: 425px;
@@ -30,6 +30,7 @@ $pourple: rgb(109, 17, 109);
 
 
 .login-form {
+
     .login-form-title {
         font-size: 23px;
         display: block;
@@ -89,14 +90,13 @@ $pourple: rgb(109, 17, 109);
     }
 
     .btn-signUp{
-         
         display: flex;
         flex-direction: column;
         gap: 10px;
         justify-content: space-between;
         align-items: center;
 
-        .sign-up-btn {
+        .sign-btn {
             position: relative;
             width: 100%;
             padding: 12px 0px;
@@ -104,10 +104,14 @@ $pourple: rgb(109, 17, 109);
             color: gray;
             border: none;
             border-radius: 5px;
-            background: $pourple;
+            background: $purple;
             cursor: pointer;
             color: rgba(255, 255, 255, 0.795);
             transition: 0.3s;
+
+            &:hover{
+                background: rgb(161, 2, 161);
+            }
         }
 
         div{
@@ -142,6 +146,7 @@ $pourple: rgb(109, 17, 109);
     cursor: pointer;
     background-color: rgba(131, 131, 131, 0.075);
     border-radius: 0px 5px 5px 0px;
+    transition: 0.2s;
     
     .password-icon{
         width: 100%;
@@ -160,6 +165,10 @@ $pourple: rgb(109, 17, 109);
         pointer-events: none;
         user-select: none;
         z-index: -1;
+    }
+
+    &:hover{
+        background-color: rgba(131, 131, 131, 0.168);
     }
 }
 

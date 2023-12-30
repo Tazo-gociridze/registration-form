@@ -87,7 +87,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.login-form .btn-signUp .sign-up-btn {
+.login-form .btn-signUp .sign-btn {
   position: relative;
   width: 100%;
   padding: 12px 0px;
@@ -99,6 +99,9 @@
   cursor: pointer;
   color: rgba(255, 255, 255, 0.795);
   transition: 0.3s;
+}
+.login-form .btn-signUp .sign-btn:hover {
+  background: rgb(161, 2, 161);
 }
 .login-form .btn-signUp div {
   display: flex;
@@ -127,6 +130,7 @@
   cursor: pointer;
   background-color: rgba(131, 131, 131, 0.075);
   border-radius: 0px 5px 5px 0px;
+  transition: 0.2s;
 }
 .hideAndShow-password .password-icon {
   width: 100%;
@@ -146,6 +150,9 @@
      -moz-user-select: none;
           user-select: none;
   z-index: -1;
+}
+.hideAndShow-password:hover {
+  background-color: rgba(131, 131, 131, 0.168);
 }
 
 .hide-password {
